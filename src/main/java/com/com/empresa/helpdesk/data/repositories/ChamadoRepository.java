@@ -8,8 +8,8 @@
 
     public interface ChamadoRepository extends JpaRepository<ChamadosEntity, Long> {
 
-        Page<ChamadosEntity> findByClienteId(Long clienteId, Pageable pageable);
+        Page<ChamadosEntity> findByUsuario_Id(Long usuarioId, Pageable pageable);
         Page<ChamadosEntity> findByStatus(StatusChamadoEnum status, Pageable pageable);
-        Page<ChamadosEntity> findByTecnicoId(Long tecnicoId, Pageable pageable);
+        Page<ChamadosEntity> findByTecnico_Id(Long tecnicoId, Pageable pageable);
 
     }
