@@ -32,5 +32,4 @@ public class ComentarioEntity {
     @JoinColumn(name = "autor_id", nullable = false)
     private UsuarioEntity user;
 
-
 }
