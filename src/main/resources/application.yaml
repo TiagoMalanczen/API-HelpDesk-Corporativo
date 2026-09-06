@@ -1,4 +1,18 @@
 spring:
   application:
     name: helpdesk
+  datasource:
+    url: jdbc:mysql://localhost:3306/helpdesk?createDatabaseIfNotExist=true
+    username: ${DATABASE_USERNAME}
+    password: ${DATABASE_PASSWORD}
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
 
+jwt:
+  expiration: 86400000 # 24 hrs
+  key: ${KEY}
