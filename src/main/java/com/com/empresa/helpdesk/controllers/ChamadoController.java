@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/v1/chamados")
 @RequiredArgsConstructor
+@CrossOrigin(origins = "*")
 public class ChamadoController {
 
     private final ChamadoService chamadoService;
